@@ -7,82 +7,137 @@
     <title>Bootstrap-portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <style>
         hr.new5 {
-            border: 8px solid #28a745;
+            border: 8px solid #3C6E71;
             margin: 0rem;
+        }
+
+        footer {
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            height: 100px;
+            width: 100%;
+            border-top: 18px solid #3C6E71;
         }
     </style>
 </head>
 
-<body background="greybackdrop.jpg">
-    <nav class="navbar bg-dark" style="height: 6rem">
-        <nav class="container-fluid">
-            <nav class="navbar-header text-white-50">
-                <h1>William N Trout</h1>
-            </nav>
+<body style="background-color:#284B63">
+    <nav class="navbar" style="height: 6rem; background-color: #353535">
+        <div class="container">
+            <div class="navbar-header">
+                <h1 style="color:#ebebeb
+                ">William N Trout</h1>
+            </div>
             <nav class="nav d-flex justify-content-end">
-                <a class="nav-link active" href="index.html">About</a>
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link text-white" href="index.html">About</a>
+                <a class="nav-link text-white" href="portfolio.html">Portfolio</a>
+                <a class="nav-link text-white" href="contact.html">Contact</a>
             </nav>
-        </nav>
+        </div>
     </nav>
     <hr class="new5">
     <div class="container">
-        <content class="row">
-            <content class="col-9 col-m-6 col-s-4">
-                <div class="card border-success" style="margin-top: 3rem; margin-bottom: 3rem;">
-                    <element class="card-body">
-                        <h1>Contact</h1>
+        <content class="row d-flex justify-content-center">
+            <content class="col-10 col-md-10 col-sm-12 col-xs-12">
+                <form action="contact.php" method="POST" enctype="multipart/form-data">
+                    <div class="card border-dark form-group" style="margin-top: 3rem; margin-bottom: 3rem;">
+                        <element class="card-body controls">
+                            <h1>Contact Me Today</h1>
+                            <hr>
+                            <element class="row form-group">
+                                <label for="contactInputName">
+                                    <h4 style="margin-left: 20px">Your Name:</h4>
+                                </label>
+                                <element class="card border-dark ml-3 mb-2" style="width: 95%;">
+                                    <input name="name" type="text" class="form-control" id="contactInputName"
+                                        placeholder="John Doe Smith">
+                                </element>
+                            </element>
+                            <element class="row form-group">
+                                <label for="contactEmailAddress">
+                                    <h4 style="margin-left: 20px">Email Address:</h4>
+                                </label>
+                                <element class="card border-dark ml-3 mb-2" style="width: 95%;">
+                                    <input name="name" type="text" class="form-control" id="contactEmailAddress"
+                                        placeholder="JohnDoeSmith@email.com">
+                                </element>
+                            </element>
+                            <element class="row form-group">
+                                <label for="contactInputMessage">
+                                    <h4 style="margin-left: 20px">Your Message:</h4>
+                                </label>
+                                <element class="card border-dark ml-3 mb-3" style="width: 95%; height: 15rem;">
+                                    <textarea name="message" class="form-control" id="contactInputMessage"
+                                        placeholder="Please leave us a message." rows="10"></textarea>
+                                </element>
+                            </element>
+                            <element class="row">
+                                <button type="submit" class="btn btn-dark btn-lg ml-3">Submit</button>
+                            </element>
+                        </element>
+                    </div>
+                </form>
+                <!-- <div class="card border-dark" style="margin-top: 3rem; margin-bottom: 3rem;">
+                    <element class="card-body controls">
+                        <h1>Contact Me Today</h1>
                         <hr>
                         <element class="row">
-                            <h4>Name</h4>
+                            <h4 style="margin-left: 20px">Your Name:</h4>
                         </element>
                         <element class="row">
-                            <element class="card border-success ml-3 mb-2" style="width: 95%;">
-                                <element class="card-body">
-                                    John Doe Smith
-                                </element>
+                            <element class="card border-dark ml-3 mb-2" style="width: 95%;">
+
+                                <input id="form_name" type="text" name="name" class="form-control"
+                                    placeholder="John Doe Smith" required="required" data-error="Name is required.">
+
                             </element>
                         </element>
                         <element class="row">
-                            <h4>Email</h4>
+                            <h4 style="margin-left: 20px">Email Address:</h4>
                         </element>
                         <element class="row">
-                            <element class="card border-success ml-3 mb-2" style="width: 95%;">
-                                <element class="card-body">
-                                    JohnDoeSmith@email.com
-                                </element>
+                            <element class="card border-dark ml-3 mb-2" style="width: 95%;">
+
+                                <input id="form_email" type="email" name="email" class="form-control"
+                                    placeholder="JohnDoeSmith@email.com" required="required"
+                                    data-error="Valid email is required.">
+
                             </element>
                         </element>
                         <element class="row">
-                            <h4>Message</h4>
+                            <h4 style="margin-left: 20px">Message:</h4>
                         </element>
                         <element class="row">
-                            <element class="card border-success ml-3 mb-3" style="width: 95%; height: 15rem;">
-                                <element class="card-body">
-                                    Your Message Here.
-                                </element>
+                            <element class="card border-dark ml-3 mb-3" style="width: 95%; height: 15rem;">
+
+                                <textarea id="form_message" name="message" class="form-control"
+                                    placeholder="Your Message Here. " rows="10" required="required"
+                                    data-error="Please,leave us a message."></textarea>
+
                             </element>
                         </element>
                         <element class="row">
-                            <button type="button" class="btn btn-success ml-3">Submit
+                            <button type="button" class="btn btn-dark ml-3">Submit
                                 <a class="text-light" href="mailto: troutw5593@gmail.com">Email:
                                     troutw5593@gmail.com</a>
                             </button>
                         </element>
                     </element>
-                </div>
+                </div> -->
             </content>
         </content>
     </div>
-    <hr class="new5">
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-        <element class="container text-center">
+        <div class="container text-center">
             <small>Copyright &copy; William N Trout </small>
-        </element>
+        </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="script.js"></script>
 </body>
 
 </html>

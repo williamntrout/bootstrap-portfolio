@@ -1,28 +1,35 @@
 William N Trout
 Full Stack Program
-Homework 2
-Bootstrap Portfolio
+Homework 9
+Bootstrap Portfolio Updates and Improvements
 
 Purpose:
-    Deliverable should demonstate a particular level of profiency using HTML, CSS, and Bootstrap principals.  
-    Deliverable should should meet the paramters of the assignment given.
+    Deliverable should demonstrate a particular level of proficiency using HTML, CSS, and Bootstrap principals.  
+    Deliverable should should meet the parameters of the assignment given.
 
 Criteria Given:
     Deliverable must contain an index.html file, a Portfolio.html file, and contact.html file.
-    These files will be built in such a way to be a reasonable version of the example given. i.e. containing all funtional elements.
-    Layout must contain a navbar, sticky footer, be responsive (mobile compatible), and contian responive images.
-    Deliverable should be funtional (i.e. all links work, navebar is consistant across all pages, must contain personal bio information.)
+    These files will be built in such a way to be a reasonable version of the example given. i.e. containing all functional elements.
+    Layout must contain a navbar, sticky footer, be responsive (mobile compatible), and contain responsive images.
+    Deliverable should be functional (i.e. all links work, navbar is consistent across all pages, must contain personal bio information.)
 
 Summation:
 
-    Using the skills demonstrated the first two weeks of teh program, I did my best to replicate (as close as I though necessary) the assignement examples given.  I used Bootstrap as much as possible to create the navbar, picture cards, buttons, and content fields.
+    Using the skills demonstrated the first two weeks of teh program, I did my best to replicate (as close as I though necessary) the assignment examples given.  I used Bootstrap as much as possible to create the navbar, picture cards, buttons, and content fields.
 
-    I insured that my content will collapse and reformat clearly when going down to smaller screen sizes. All element wrap and stack and remain visabel and usable.  I insured there are no elements that ovelay eachother making them unsuable or not visable to the user. 
+    I insured that my content will collapse and reformat clearly when going down to smaller screen sizes. All element wrap and stack and remain visible and usable.  I insured there are no elements that overlay each other making them unusable or not visible to the user. 
 
-    I spent an equal amount of time goign over the code to insure there was use of semantic language and that the layout made sense along with the the tags being logical. I also tried to minimize as much non necessary lines as I could identify.
+    I spent an equal amount of time going over the code to insure there was use of semantic language and that the layout made sense along with the the tags being logical. I also tried to minimize as much non necessary lines as I could identify.
+
+    In  accordance with the assignment, and feedback given from previous submission, the following changes were implemented.
+
+    1.  The color scheme was changed to something that was more visually appealing, rather than just black, white, and grey.
+    2.  Each of the pages was altered in order for them to look uniform in size, layout, and appearance. 
+    3.  The columns, images, and cards for each page were altered so that they would be mobile responsive and maintain function.
+    4.  The contact page was made functional using boot strap form elements and PHP. This was previously a static display.
 
 Submission standard:
 
-    URL for the GitHub repository and deployed applicatoin posted on bootcamp spot. 
+    URL for the GitHub repository and deployed application posted on boot camp spot. 
 
 
