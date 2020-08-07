@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap-Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -14,28 +15,6 @@
       src="https://kit.fontawesome.com/70462bea42.js"
       crossorigin="anonymous"
     ></script>
-
-    <style>
-      hr.new5 {
-        border: 8px solid #3c6e71;
-        margin: 0rem;
-      }
-
-      footer {
-        position: fixed;
-        left: 0px;
-        bottom: 0px;
-        height: 100px;
-        width: 100%;
-        border-top: 18px solid #3c6e71;
-      }
-      .smed i {
-        color: #ffffff;
-        font-size: 50px;
-        margin-bottom: 30px;
-        margin-right: 10px;
-      }
-    </style>
   </head>
 
   <body style="background-color: #284b63;">
@@ -53,6 +32,8 @@
       </div>
     </nav>
     <hr class="new5" />
+
+
     <div class="container">
       <content class="row d-flex justify-content-center">
         <content class="col-10 col-md-10 col-sm-12 col-xs-12">
@@ -69,71 +50,75 @@
                 border-radius: 0.25rem;
               "
             >
-              <element class="card-body controls">
-                <h3>Contact Me Today</h3>
-                <hr />
-                <element class="row form-group">
-                  <label for="contactInputName">
-                    <h4 style="margin-left: 20px;">Your Name:</h4>
-                  </label>
-                  <element
-                    class="card border-dark ml-3 mb-2"
-                    style="width: 95%;"
-                  >
-                    <input
-                      name="name"
-                      type="text"
-                      class="form-control"
-                      id="contactInputName"
-                      placeholder="John Doe Smith"
-                    />
-                  </element>
+                <element class="card-body controls">
+                  <h3>Contact Me Today</h3>
+                  <hr />
+                  <div id="contact-card">
+                    <element class="row form-group">
+                      <label for="contactInputName">
+                        <h5 style="margin-left: 20px;">Your Name:</h5>
+                      </label>
+                      <element
+                        class="card border-dark ml-3 mb-2"
+                        style="width: 95%;"
+                      >
+                        <input
+                          name="name"
+                          type="text"
+                          class="form-control"
+                          id="contactInputName"
+                          placeholder="John Doe Smith"
+                        />
+                      </element>
+                    </element>
+                    <element class="row form-group">
+                      <label for="contactEmailAddress">
+                        <h5 style="margin-left: 20px;">Email Address:</h5>
+                      </label>
+                      <element
+                        class="card border-dark ml-3 mb-2"
+                        style="width: 95%;"
+                      >
+                        <input
+                          name="name"
+                          type="text"
+                          class="form-control"
+                          id="contactEmailAddress"
+                          placeholder="JohnDoeSmith@email.com"
+                        />
+                      </element>
+                    </element>
+                    <element class="row form-group">
+                      <label for="contactInputMessage">
+                        <h5 style="margin-left: 20px;">Your Message:</h5>
+                      </label>
+                      <element
+                        class="card border-dark ml-3 mb-3"
+                        style="width: 95%; height: 8rem;"
+                      >
+                        <textarea
+                          name="message"
+                          class="form-control"
+                          id="contactInputMessage"
+                          placeholder="Please leave us a message."
+                          rows="10"
+                        ></textarea>
+                      </element>
+                    </element>
+                    <element class="row d-flex justify-content-center">
+                      <button type="submit" class="btn btn-dark btn-lg ml-3">
+                        Submit
+                      </button>
+                    </element>
+                  </div>
                 </element>
-                <element class="row form-group">
-                  <label for="contactEmailAddress">
-                    <h4 style="margin-left: 20px;">Email Address:</h4>
-                  </label>
-                  <element
-                    class="card border-dark ml-3 mb-2"
-                    style="width: 95%;"
-                  >
-                    <input
-                      name="name"
-                      type="text"
-                      class="form-control"
-                      id="contactEmailAddress"
-                      placeholder="JohnDoeSmith@email.com"
-                    />
-                  </element>
-                </element>
-                <element class="row form-group">
-                  <label for="contactInputMessage">
-                    <h4 style="margin-left: 20px;">Your Message:</h4>
-                  </label>
-                  <element
-                    class="card border-dark ml-3 mb-3"
-                    style="width: 95%; height: 10rem;"
-                  >
-                    <textarea
-                      name="message"
-                      class="form-control"
-                      id="contactInputMessage"
-                      placeholder="Please leave us a message."
-                      rows="10"
-                    ></textarea>
-                  </element>
-                </element>
-                <element class="row">
-                  <button type="submit" class="btn btn-dark btn-lg ml-3">
-                    Submit
-                  </button>
-                </element>
-              </element>
-            </div>
+              </div>
           </form>
         </content>
       </content>
     </div>
+
+    
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
       <div class="container text-center smed">
           <a href="https://github.com/williamntrout" target="_blank"><i class="fab fa-github-square"></i></i</a>

@@ -5,31 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bootstrap-Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
             <script src="https://kit.fontawesome.com/70462bea42.js" crossorigin="anonymous"></script>   
         
-        <style>
-            hr.new5 {
-                border: 8px solid #3C6E71;
-                margin: 0rem;
-            }
-    
-            footer {
-                position: fixed;
-                left: 0px;
-                bottom: 0px;
-                height: 100px;
-                width: 100%;
-                border-top: 18px solid #3C6E71;
-            }
-            .smed i {
-                color: #ffffff;
-                font-size: 50px;
-                margin-bottom: 30px;
-                margin-right:10px;
-            }
-        </style>
+       
     </head>
 
 
@@ -49,67 +30,69 @@
         </nav>
     </nav>
     <hr class="new5">
+
+
     <div class="container">
         <content class="row d-flex justify-content-center">
             <content class="col-10 col-md-10 col-sm-12 col-xs-12">
-                <div class="card border-dark" style="margin-top: 1rem; margin-bottom: 3rem; border-radius: .25rem; background-color: #d9d9d9;">
+                <div id="content-card" class="card border-dark" style="margin-top: 1rem; margin-bottom: 3rem; border-radius: .25rem; background-color: #d9d9d9;">
                     <div class="card-body">
                         <h1>Portfolio</h1>
                         <hr>
-                    </div>
-                    <content class="row">
-                        <content class="col">
-                            <element class="card mr-5 ml-5 mb-5 border-dark" style="max-width: 310px; float: left;">
-                                <a class="btn btn-dark btn-lrg" href="https://williamntrout.github.io/weatherdashboard/" target="_blank">Weather Dashboard</a>
-                                <img src="./assets/WeatherDashboard.png" class="card-img-top" alt="Seattle">
-                                <element class="card-body">
-                                    <p class="card-text">Basic web application built for class exorcise to demonstrate the retrieval and use of Server Side API data. </p>
-                                </element>
-                            </element>
-                            <element class="card mr-5 ml-5 mb-5 border-dark" style="max-width: 310px; float: left;">
-                                <a class="btn btn-dark btn-lrg" href="https://williamntrout.github.io/JavasScriptQuizHomework/" target="_blank">Quiz Game</a>
-                                <img src="./assets/Quiz Game.png" class="card-img-top image-fluid" alt="Seattle">
-                                <element class="card-body">
-                                    <p class="card-text">Web application built for BOOTCAMP class exorcise to demonstrate the use of WEB APIs.</p>
-                                </element>
-                            </element>
-                            <element class="card mr-5 ml-5 mb-5 border-dark" style="max-width: 310px; float: left;">
-                                <a class="btn btn-dark btn-lrg" href="https://williamntrout.github.io/workdayplanner/" target="_blank">Day Planner</a>
-                                <img src="./assets/workdayplanner.png"class="card-img-top image-fluid" alt="Seattle">
-                                <element class="card-body">
-                                    <p class="card-text">Web application built for BOOTCAMP class exorcise to demonstrate the use of THIRD PARTY APIs.</p>
-                                </element>
-                            </element>
-                            <element class="card mr-5 ml-5 mb-5 border-dark" style="max-width: 310px; float: left;">
-                                <a class="btn btn-dark btn-lrg" href="https://williamntrout.github.io/project-1-refrigerator-companion/" target="_blank">Recipe Generator</a>
-                                <img src="./assets/Project 1.png"class="card-img-top image-fluid" alt="Seattle">
-                                <element class="card-body">
-                                    <p class="card-text">Collaborative project, bringing together principles from BOOTSTRAP, JAVASCRIPT, and API usage.</p>
-                                </element>
-                            </element>
-                            <element class="card mr-5 ml-5 mb-5 border-dark" style="max-width: 310px; float: left;">
-                                <a class="btn btn-dark btn-lrg" href="https://williamntrout.github.io/Password_Generator_Javascript_Exorcise/" target="_blank">Password Generator</a>
-                                <img src="./assets/PassWordGenerator.png" class="card-img-top image-fluid" alt="Seattle">
-                                <element class="card-body">
-                                    <p class="card-text">Web application built for class exorcise to demonstrate the principles of basic JAVASCRIPT.</p>
-                                </element>
-                            </element>
-                            <element class="card mr-5 ml-5 mb-5 border-dark" style="max-width: 310px; float: left;">
-                                <img src="./assets/Seattle.JPG" class="card-img-top image-fluid" alt="Seattle">
-                                <element class="card-body">
-                                    <p class="card-text">Space Needle, built as an example of futuristic
-                                        housing for the worlds fair, proudly flies the 12 of seattle flag to
-                                        honor Seahawks' fans.</p>
-                                </element>
-                            </element>
+                        <content class="row">
+                            <content class="col">
+                                 <div id="portfolio-content">
+                                    <element class="card mr-5 ml-5 mb-5 border-dark" style="max-width: 310px; float: left;">
+                                        <a class="btn btn-dark btn-lrg" href="https://williamntrout.github.io/weatherdashboard/" target="_blank">Weather Dashboard</a>
+                                        <img src="./assets/WeatherDashboard.png" class="card-img-top" alt="Seattle">
+                                        <element class="card-body">
+                                            <p class="card-text">Basic web application built for class exorcise to demonstrate the retrieval and use of Server Side API data. </p>
+                                        </element>
+                                    </element>
+                                    <element class="card mr-5 ml-5 mb-5 border-dark" style="max-width: 310px; float: left;">
+                                        <a class="btn btn-dark btn-lrg" href="https://williamntrout.github.io/JavasScriptQuizHomework/" target="_blank">Quiz Game</a>
+                                        <img src="./assets/Quiz Game.png" class="card-img-top image-fluid" alt="Seattle">
+                                        <element class="card-body">
+                                            <p class="card-text">Web application built for BOOTCAMP class exorcise to demonstrate the use of WEB APIs.</p>
+                                        </element>
+                                    </element>
+                                    <element class="card mr-5 ml-5 mb-5 border-dark" style="max-width: 310px; float: left;">
+                                        <a class="btn btn-dark btn-lrg" href="https://williamntrout.github.io/workdayplanner/" target="_blank">Day Planner</a>
+                                        <img src="./assets/workdayplanner.png"class="card-img-top image-fluid" alt="Seattle">
+                                        <element class="card-body">
+                                            <p class="card-text">Web application built for BOOTCAMP class exorcise to demonstrate the use of THIRD PARTY APIs.</p>
+                                        </element>
+                                    </element>
+                                    <element class="card mr-5 ml-5 mb-5 border-dark" style="max-width: 310px; float: left;">
+                                        <a class="btn btn-dark btn-lrg" href="https://williamntrout.github.io/project-1-refrigerator-companion/" target="_blank">Recipe Generator</a>
+                                        <img src="./assets/Project 1.png"class="card-img-top image-fluid" alt="Seattle">
+                                        <element class="card-body">
+                                            <p class="card-text">Collaborative project, bringing together principles from BOOTSTRAP, JAVASCRIPT, and API usage.</p>
+                                        </element>
+                                    </element>
+                                    <element class="card mr-5 ml-5 mb-5 border-dark" style="max-width: 310px; float: left;">
+                                        <a class="btn btn-dark btn-lrg" href="https://williamntrout.github.io/Password_Generator_Javascript_Exorcise/" target="_blank">Password Generator</a>
+                                        <img src="./assets/PassWordGenerator.png" class="card-img-top image-fluid" alt="Seattle">
+                                        <element class="card-body">
+                                            <p class="card-text">Web application built for class exorcise to demonstrate the principles of basic JAVASCRIPT.</p>
+                                        </element>
+                                    </element>
+                                    <element class="card mr-5 ml-5 mb-5 border-dark" style="max-width: 310px; float: left;">
+                                        <img src="./assets/Seattle.JPG" class="card-img-top image-fluid" alt="Seattle">
+                                        <element class="card-body">
+                                            <p class="card-text">Space Needle, built as an example of futuristic
+                                                housing for the worlds fair, proudly flies the 12 of seattle flag to
+                                                honor Seahawks' fans.</p>
+                                        </element>
+                                    </element>
+                                </div>
                         </content>
                     </content>
                 </div>
             </content>
+        </content>
     </div>
-    </content>
-    </content>
-    </element>
+            
     <hr class="new5">
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
         <div class="container text-center smed">

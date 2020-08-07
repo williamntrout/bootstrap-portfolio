@@ -1,0 +1,39 @@
+hr.new5 {
+  border: 8px solid #3c6e71;
+  margin: 0rem;
+}
+
+footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 112px;
+  width: 100%;
+  border-top: 18px solid #3c6e71;
+}
+.smed i {
+  color: #ffffff;
+  font-size: 50px;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+#content-card {
+  height: calc(100vh - 254px);
+  margin-top: 10px;
+  overflow-y: scroll;
+}
+#portfolio-content {
+  height: calc(100vh - 380px);
+  overflow-y: scroll;
+}
+#contact-card {
+  height: calc(100vh - 365px);
+  margin-top: 10px;
+  overflow-y: scroll;
+}
+#about-content {
+  height: calc(100vh - 365px);
+  margin-top: 10px;
+  overflow-y: scroll;
+}
